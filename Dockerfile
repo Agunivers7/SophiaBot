@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Sophia
-RUN git clone -b shiken https://github.com/dihanofficial/sophiaBot /root/SophiaBot
+RUN git clone -b shiken https://github.com/Agunivers7/sophiaBot /root/SophiaBot
 WORKDIR /root/SophiaBot
 
 #Copy config file to /root/Sophia/Sophia
