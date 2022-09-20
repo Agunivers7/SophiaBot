@@ -3,7 +3,6 @@ import time
 from typing import Dict, List
 
 import bleach
-import markdown2
 import emoji
 
 from telegram import MessageEntity
