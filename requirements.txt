@@ -2,7 +2,6 @@ cloudmersive_virus_api_client
 PyDictionary
 future
 emoji
-lxml
 wget
 gtts
 faker
