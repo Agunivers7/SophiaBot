@@ -1,25 +1,16 @@
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
-import json
-import os
 
-
-def get_user_list(config, key):
-    with open("{}/SophiaBot/{}".format(os.getcwd(), config), "r") as json_file:
-        return json.load(json_file)[key]
-
-
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
+
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1725052009  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "dihanrandila" 
-    SUPPORT_CHAT = "dihan_official"  # Your own group for support, do not add the @
+    API_ID = 10651048  # integer value, dont use ""
+    API_HASH = "37775aca7d11f450ecde375baac17fe7"
+    TOKEN = "5743646572:AAEn0QWcJtEMN3EbRRj_rNoshdhRZfqrKb8"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1323557247  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "@Spoidermon12" 
+    SUPPORT_CHAT = "Agunivers_backup"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001392103597
     )  # Prints any new group the bot is added to, prints just the name and ID.
@@ -28,13 +19,13 @@ class Config(object):
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://zlhdbjah:9hhelgbtO1L94HWzHQmy-QlS1J-VVaTR@lucky.db.elephantsql.com/zlhdbjah"  # needed for any database modules
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = "TcOjJ8pWGP8OxnkQWQqORD3LVm8qp8rNvZ~hP9A27fMw~fnUfWk3TvITNTkqnGyG"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "SpamWatchSupport"
 
     # OPTIONAL
